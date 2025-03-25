@@ -13,7 +13,7 @@ A modern web application to generate colored text for Discord messages using cod
 
 ## 🚀 Live Demo
 
-[View Demo](https://your-demo-url-here.com) (Replace with your deployed URL)
+[View Demo](https://discord-text-generator-m7452t855-priyavart-jhas-projects.vercel.app/) (Replace with your deployed URL)
 
 ## 📋 Prerequisites
 
