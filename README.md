@@ -24,7 +24,7 @@ A modern web application to generate colored text for Discord messages using cod
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/discord-text-generator.git
+   git clone https://github.com/jhapriyavart10/discord-text-generator.git
    cd discord-text-generator
    ```
 2. Install dependencies:
