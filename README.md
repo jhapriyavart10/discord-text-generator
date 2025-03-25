@@ -1,46 +1,93 @@
-# Getting Started with Create React App
+# Discord Colored Text Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern web application to generate colored text for Discord messages using code blocks. This tool allows users to easily create vibrant, colorful text that can be pasted directly into Discord.
 
-## Available Scripts
+## ✨ Features
 
-In the project directory, you can run:
+- Generate colored text using Discord's code block syntax
+- Choose from CSS or ANSI syntax methods
+- Real-time preview of how text will appear in Discord
+- Color picker with presets and custom color support
+- One-click copy to clipboard
+- Mobile-friendly interface
 
-### `npm start`
+## 🚀 Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[View Demo](https://your-demo-url-here.com) (Replace with your deployed URL)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 📋 Prerequisites
 
-### `npm test`
+- Node.js (v14.x or later)
+- npm (v7.x or later)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🔧 Installation
 
-### `npm run build`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/discord-text-generator.git
+   cd discord-text-generator
+   ```
+2. Install dependencies:
+   ```bash
+   npm install --legacy-peer-deps
+   ```
+3. Configure Vite:
+   Create or modify `vite.config.ts`:
+   ```javascript
+   import { defineConfig } from 'vite';
+   import react from '@vitejs/plugin-react';
+   
+   export default defineConfig({
+     plugins: [react()],
+     server: {
+       port: 3000,
+       open: true,
+     },
+   });
+   ```
+4. Ensure `index.html` is at the project root (not in the `public` folder).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. Start the development server:
+   ```bash
+   npm run dev
+   ```
+6. Open your browser and navigate to `http://localhost:3000/`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🎮 How to Use
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Enter your text in the text input area.
+2. Select a color using the color picker.
+3. Choose syntax type:
+   - **CSS** (better color support on desktop)
+   - **ANSI** (better for mobile)
+4. Preview your text as it will appear in Discord.
+5. Copy the generated code using the "Copy to Clipboard" button.
+6. Paste into Discord and send your message!
 
-### `npm run eject`
+## 🔍 How It Works
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Discord supports two main methods for colored text:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **CSS Method**
+- **ANSI Method** (Better for Mobile)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+This generator handles the proper formatting automatically so you don't need to worry about the syntax.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🛠️ Technologies Used
 
-## Learn More
+- React
+- TypeScript
+- Vite
+- Mantine UI
+- CSS Modules
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📄 License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🌟 Acknowledgements
+
+- Inspired by rebane2001's Discord Colored Text Generator
+- Discord for supporting code blocks with syntax highlighting
+- Mantine UI for the component library
+
